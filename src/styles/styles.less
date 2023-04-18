@@ -82,6 +82,16 @@ section {
   }
 }
 
+@media @mobile-screen {
+  .products {
+    display: block;
+
+    .product-item {
+      margin-bottom: 32px;
+    }
+  }
+}
+
 @media @tablet-screen {
   .container {
     max-width: 80%;
@@ -90,15 +100,5 @@ section {
   .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
-  }
-}
-
-@media @mobile-screen {
-  .products {
-    display: block;
-
-    .product-item {
-      margin-bottom: 32px;
-    }
   }
 }

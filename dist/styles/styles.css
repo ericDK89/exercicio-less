@@ -66,6 +66,14 @@ section {
 .products .product-button:hover {
   background-color: #4cd137;
 }
+@media (max-width: 767px) {
+  .products {
+    display: block;
+  }
+  .products .product-item {
+    margin-bottom: 32px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: 80%;
@@ -73,13 +81,5 @@ section {
   .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
-  }
-}
-@media (max-width: 767px) {
-  .products {
-    display: block;
-  }
-  .products .product-item {
-    margin-bottom: 32px;
   }
 }
